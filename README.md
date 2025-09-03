@@ -1,4 +1,4 @@
-# Portfólio - Jéssica Cunha Rebello 💻✨
+# Portifólio - Jéssica Cunha Rebello 💻✨
 
 Bem-vindo(a) ao meu portfólio!  
 Este site foi desenvolvido com muito carinho para apresentar um pouco sobre mim, minhas habilidades e os projetos que venho trabalhando ao longo da minha jornada na área de tecnologia.
