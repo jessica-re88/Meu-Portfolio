@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio - Jéssica Cunha Rebello</title>
+  <link rel="stylesheet" href="portifolio.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">Jéssica Cunha Rebello</h1>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#sobre">Sobre Mim</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+      <button id="toggle-dark" class="dark-btn">🌙</button>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="parallax pimg1">
+    <div class="ptext glass">
+      <h2>Olá, eu sou Jéssica Cunha Rebello</h2>
+      <p>Power BI | SQL | HTML | CSS </p>
+    </div>
+  </section>
+
+  <!-- Sobre -->
+  <section id="sobre" class="section section-light glass about">
+    <div class="about-container">
+      <img src="imagens/22.jpg" alt="Foto de Jéssica" class="about-photo">
+      <div class="about-text">
+        <h2>Sobre Mim</h2>
+        <p>
+          Técnica Especialista em Tecnologias e Programação de Sistemas de Informação, formada pelo IEFP-Online (Portugal). Atualmente, curso Mestrado em Big Data, Business Intelligence e Project Management.
+          <br><br>
+          Sou apaixonada por aprender, enfrentar desafios e explorar o universo da análise de dados e estatística. Ao me aprofundar nesse campo, percebi que encontrei meu verdadeiro lugar: um espaço onde posso evoluir constantemente e aplicar o poder dos dados para gerar insights valiosos, soluções inteligentes e impacto positivo no mundo.
+          <br><br>
+          Acredito que dados bem trabalhados têm o poder de transformar decisões e criar valor real.
+          <br><br>
+          Se você procura alguém focado, analítico, colaborativo e curioso, que gosta de aprender e contribuir em equipe, está no lugar certo.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projetos -->
+  <section id="projetos" class="parallax pimg2">
+    <div class="ptext glass">
+      <h2>Meus Projetos</h2>
+    </div>
+  </section>
+  <section class="section section-dark glass">
+    <div class="cards">
+      <!-- Projeto 1 -->
+      <div class="card">
+        <img src="imagens/oficina.jpg" alt="Projeto 1 " class="card-img">
+        <h3>Base de Dados</h3>
+        <p>Uma base de dados para uma oficina mecânica com consulta em SQL.</p>
+        <a href="https://github.com/jessica-re88/Data-Base-Oficina-Mecanica" target="_blank" class="btn-link">Ver no GitHub</a>
+      </div>
+      <!-- Projeto 2 -->
+      <div class="card">
+        <img src="imagens/ecommerce.jpg" alt="Projeto 2" class="card-img">
+        <h3>Base de Dados</h3>
+        <p>Este projeto tem como objetivo a modelagem lógica de um banco de dados para um sistema de E-commerce.</p>
+        <a href="https://github.com/jessica-re88/Projeto-E-commerce-Data-Base" target="_blank" class="btn-link">Ver no GitHub</a>
+      </div>
+      <!-- Projeto 3 -->
+      <div class="card">
+        <img src="imagens/automóvel.jpg" alt="Projeto 3" class="card-img">
+        <h3>Stand de Automóveis </h3>
+        <p>Site criado com a finalidade de demostrar a venda e compra de veículos.</p>
+        <a href="https://github.com/jessica-re88/Stand-de-Automveis" target="_blank" class="btn-link">Ver no GitHub</a>
+      </div>
+      <!-- Projeto 4 -->
+      <div class="card">
+        <img src="imagens/ballet.jpg" alt="Projeto 4" class="card-img">
+        <h3>Site de Ballet</h3>
+        <p>Um site criado como portifolio para uma pessoa da alta costura do Ballet Classico.</p>
+        <a href="https://jessica-re88.github.io/site-simone-ballet/index.html" target="_blank" class="btn-link">Ver no GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Habilidades -->
+  <section id="habilidades" class="parallax pimg3">
+    <div class="ptext glass">
+      <h2>Minhas Habilidades</h2>
+    </div>
+  </section>
+  <section class="section section-light glass">
+    <ul class="skills">
+      <li>Análise de Dados</li>
+      <li>Dashboard</li>
+      <li>Consultas SQL</li>
+      <li>Power BI</li>
+      <li>HTML | CSS</li>
+    </ul>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato" class="parallax pimg1">
+    <div class="ptext glass">
+      <h2>Contato</h2>
+    </div>
+  </section>
+  <section class="section section-dark glass contato">
+    <div class="contato-container">
+      <form action="https://formsubmit.co/jessica20rebello@hotmail.com" method="POST" class="form-contato">
+        <input type="text" name="name" placeholder="Seu Nome" required>
+        <input type="email" name="email" placeholder="Seu E-mail" required>
+        <textarea name="message" placeholder="Sua Mensagem"></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+
+      <div class="contato-info">
+        <p>Email</p>
+        <p> jessica20rebello@hotmail.com</p><br>
+        <p>Telefone</p>
+        <p>(+351) 93609-5736</p><br>
+        <p>Endereço</p>
+        <p> Braga, Portugal</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer-bottom">
+    <p>&copy; 2025 Jéssica Cunha Rebello. All rights reserved.</p>
+  </footer>
+
+  <!-- Script externo -->
+  <script src="portifolio.js"></script>
+</body>
+</html>
+
+

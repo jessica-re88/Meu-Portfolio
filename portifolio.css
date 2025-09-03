@@ -1,0 +1,322 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  line-height: 1.6;
+  background: linear-gradient(120deg, #a8d8ff, #66b2ff, #ff99cc);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  color: #222;
+  transition: background 0.5s, color 0.5s;
+}
+
+/* Gradiente animado */
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  z-index: 1000;
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #004466;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar ul li a {
+  color: #004466;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+  color: #ff5fa2;
+}
+
+/* Botão Dark Mode */
+.dark-btn {
+  margin-left: 20px;
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #004466;
+  transition: transform 0.3s;
+}
+.dark-btn:hover {
+  transform: scale(1.2);
+}
+
+/* Parallax sections */
+.parallax {
+  position: relative;
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pimg1 {
+  background-image: url("imagens/5.jpg");
+}
+.pimg2 {
+  background-image: url("imagens/7.jpg");
+}
+.pimg3 {
+  background-image: url("imagens/4.jpg");
+}
+
+/* Texto com efeito glassmorphism */
+.ptext {
+  text-align: center;
+  padding: 30px;
+  border-radius: 15px;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.ptext h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.ptext p {
+  font-size: 1.2rem;
+}
+
+/* Seções normais */
+.section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.section-light {
+  color: #222;
+}
+
+.section-dark {
+  color: #fff;
+}
+
+/* Cards */
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(15px);
+  padding: 20px;
+  border-radius: 15px;
+  width: 250px;
+  transition: transform 0.3s;
+  color: #004466;
+}
+.card:hover {
+  transform: translateY(-10px);
+}
+
+/* Skills */
+.skills {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #004466;
+}
+
+/* Formulário */
+.form-contato {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin: auto;
+}
+
+.form-contato input,
+.form-contato textarea {
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #004466;
+}
+
+.form-contato textarea {
+  min-height: 120px;
+}
+
+/* Botão de enviar */
+.form-contato button {
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #4da6ff, #66ccff, #80d4ff);
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.3s, background 0.3s;
+}
+.form-contato button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #3385ff, #4da6ff, #66ccff);
+}
+
+.dark-mode {
+  background: linear-gradient(120deg, #0d1b2a, #1b263b, #274c77);
+  color: #f0f0f0;
+}
+.dark-mode .navbar {
+  background: rgba(0, 0, 0, 0.6);
+}
+.dark-mode .navbar ul li a,
+.dark-mode .dark-btn,
+.dark-mode .logo {
+  color: #cce6ff;
+}
+.dark-mode .card,
+.dark-mode .glass {
+  background: rgba(0, 0, 0, 0.4);
+  color: #cce6ff;
+}
+.dark-mode .skills {
+  color: #cce6ff;
+}
+.dark-mode .form-contato input,
+.dark-mode .form-contato textarea {
+  background: rgba(255, 255, 255, 0.08);
+  color: #eee;
+}
+.dark-mode .form-contato button {
+  background: linear-gradient(135deg, #1e90ff, #4682b4, #274c77);
+}
+.dark-mode .form-contato button:hover {
+  background: linear-gradient(135deg, #1565c0, #1e90ff, #4682b4);
+}
+
+/* SOBRE MIM */
+.about-container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.about-photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid rgba(255,255,255,0.4);
+}
+.about-text {
+  flex: 1;
+  text-align: left;
+}
+
+/* CARDS DE PROJETOS */
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.card-img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+.btn-link {
+  margin-top: 10px;
+  display: inline-block;
+  padding: 8px 15px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #4da6ff, #66ccff, #80d4ff);
+  color: white;
+  text-decoration: none;
+  transition: background 0.3s, transform 0.3s;
+}
+.btn-link:hover {
+  background: linear-gradient(135deg, #3385ff, #4da6ff, #66ccff);
+  transform: scale(1.05);
+}
+
+/* CONTATO */
+/* CONTAINER DE CONTATO */
+.contato-container {
+  display: flex;
+  justify-content: flex-start; /* formulário à esquerda */
+  align-items: flex-start;
+  gap: 40px; /* controla o espaço entre o formulário e as infos */
+  flex-wrap: wrap; /* mobile-friendly */
+}
+
+/* FORMULÁRIO */
+.form-contato {
+  flex: 1 1 500px; /* mantém o tamanho grande */
+  max-width: 600px;
+}
+
+/* INFORMAÇÕES */
+.contato-info {
+  align-self: flex-start; /* gruda no topo do form */
+  text-align: left;       /* alinhado à esquerda */
+  font-size: 1rem;
+  line-height: 1.6;
+  min-width: 220px;       /* largura mínima para não quebrar */
+}
+
+
+/* FOOTER */
+.footer-bottom {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  background: rgba(0,0,0,0.3);
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .form-contato {
+    max-width: 100%;
+  }
+}
+
