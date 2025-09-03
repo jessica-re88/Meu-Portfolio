@@ -16,7 +16,7 @@ Este site foi desenvolvido com muito carinho para apresentar um pouco sobre mim,
 - Um formulário de contato para facilitar a comunicação
 
 ## 🌐 Acesse o site
-👉 [Clique aqui para ver meu portfólio online](https://SEU-USUARIO.github.io/NOME-DO-REPOSITORIO)
+👉 [Clique aqui para ver meu portfólio online]([https://SEU-USUARIO.github.io/NOME-DO-REPOSITORIO](https://jessica-re88.github.io/Meu-Portifolio/))
 
 ---
 
