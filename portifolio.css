@@ -320,3 +320,79 @@ body {
   }
 }
 
+/* Responsividade */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 20px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+    margin-top: 10px;
+  }
+
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-text {
+    text-align: center;
+  }
+
+  .cards {
+    justify-content: center;
+  }
+
+  .contato-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contato-info {
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+
+/* Celulares */
+@media (max-width: 768px) {
+  .ptext h2 {
+    font-size: 1.8rem;
+  }
+
+  .ptext p {
+    font-size: 1rem;
+  }
+
+  .skills {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  .navbar .logo {
+    font-size: 1.2rem;
+  }
+
+  .form-contato {
+    width: 100%;
+  }
+}
+
+
+
